@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CCC-Básico ayuda a negocios gastronómicos a controlar materias primas, porciones y recetas para conocer el costo real de cada preparación." />
+  <meta name="theme-color" content="#08191c" />
+  <title>CCC-Básico | Control de Costos de Cocina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav-shell">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-symbol">C</span>
+        <span class="brand-copy">
+          <strong>CCC-Básico</strong>
+          <small>Control de Costos de Cocina</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#problema">El problema</a>
+        <a href="#flujo">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#precio">Precio</a>
+        <a class="nav-cta" href="#contacto">Solicitar demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-kicker">
+            <span class="kicker-dot"></span>
+            Control de costos para negocios gastronómicos
+          </div>
+
+          <h1>De la compra al plato, <span>conoce dónde se va cada peso.</span></h1>
+
+          <p class="hero-lead">
+            CCC-Básico conecta <strong>Bodega, Cocina y Recetas</strong> para que puedas conocer el costo de tus materias primas, porciones y preparaciones sin depender de cálculos dispersos.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">
+              Solicitar demostración
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" href="#flujo">Ver cómo funciona</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Módulos principales">
+            <div><span>01</span><strong>Bodega</strong></div>
+            <div><span>02</span><strong>Cocina</strong></div>
+            <div><span>03</span><strong>Recetas</strong></div>
+          </div>
+        </div>
+
+        <div class="product-stage reveal reveal-delay">
+          <div class="floating-note note-top">
+            <span class="note-icon">✓</span>
+            <div><small>Costo actualizado</small><strong>por porción</strong></div>
+          </div>
+
+          <div class="browser-card">
+            <div class="browser-bar">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <div class="browser-url">CCC-Básico · Vista del sistema</div>
+              <div class="browser-user">AD</div>
+            </div>
+
+            <div class="app-shell">
+              <aside class="app-sidebar">
+                <div class="app-logo">CCC</div>
+                <div class="app-nav-item active"><span>▦</span><em>Bodega</em></div>
+                <div class="app-nav-item"><span>◫</span><em>Cocina</em></div>
+                <div class="app-nav-item"><span>≡</span><em>Recetas</em></div>
+              </aside>
+
+              <div class="app-main">
+                <div class="app-heading">
+                  <div><small>CCC-Básico</small><strong>Resumen de costos</strong></div>
+                  <button type="button" tabindex="-1">+ Materia prima</button>
+                </div>
+
+                <div class="stats-row">
+                  <div class="stat-card">
+                    <span>Materia prima</span>
+                    <strong>Carne vacuno</strong>
+                    <small>20 kg disponibles</small>
+                  </div>
+                  <div class="stat-card highlight">
+                    <span>Costo por kg</span>
+                    <strong>$6.000</strong>
+                    <small>Según costo ingresado</small>
+                  </div>
+                </div>
+
+                <div class="process-card">
+                  <div class="process-head">
+                    <div><span>Procesamiento</span><strong>Porción carne 250 g</strong></div>
+                    <b>$1.500</b>
+                  </div>
+                  <div class="cost-track"><span></span></div>
+                  <div class="process-meta"><span>Materia prima vinculada</span><strong>Carne vacuno</strong></div>
+                </div>
+
+                <div class="recipe-preview">
+                  <div class="recipe-icon">R</div>
+                  <div><span>Receta</span><strong>Lomo a lo pobre</strong></div>
+                  <div class="recipe-cost"><span>Costo receta</span><strong>$4.780</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-note note-bottom">
+            <span class="note-number">250 g</span>
+            <div><small>Porción creada desde</small><strong>materia prima real</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container audience-row reveal">
+        <span>Ideal para</span>
+        <div>Restaurantes</div>
+        <div>Pizzerías</div>
+        <div>Sushi</div>
+        <div>Cafeterías</div>
+        <div>Food trucks</div>
+        <div>Pastelerías</div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problema">
+      <div class="container section-head reveal">
+        <div>
+          <span class="eyebrow">El problema</span>
+          <h2>Si el costo cambia y tu cálculo no, el margen también cambia.</h2>
+        </div>
+        <p>
+          Comprar, porcionar y preparar son etapas conectadas. Cuando cada una se controla por separado, es fácil perder la referencia del costo real del producto.
+        </p>
+      </div>
+
+      <div class="container problem-grid">
+        <article class="problem-card reveal">
+          <span class="card-number">01</span>
+          <div class="card-icon">$</div>
+          <h3>Sabes cuánto compraste</h3>
+          <p>Pero no necesariamente cuánto de ese costo termina en cada porción o preparación.</p>
+        </article>
+
+        <article class="problem-card reveal reveal-delay-1">
+          <span class="card-number">02</span>
+          <div class="card-icon">↗</div>
+          <h3>Los precios cambian</h3>
+          <p>Cuando cambia el costo de una materia prima, necesitas volver a entender el costo de lo que produces.</p>
+        </article>
+
+        <article class="problem-card reveal reveal-delay-2">
+          <span class="card-number">03</span>
+          <div class="card-icon">≠</div>
+          <h3>Vender más no garantiza margen</h3>
+          <p>Sin un costo claro, fijar precios o evaluar una receta se transforma en una estimación.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="flujo">
+      <div class="container flow-intro reveal">
+        <span class="eyebrow light">Cómo funciona</span>
+        <h2>Un flujo simple que sigue la lógica real de tu cocina.</h2>
+        <p>CCC-Básico conserva la relación entre lo que compras, lo que porcionas y lo que finalmente utilizas en una receta.</p>
+      </div>
+
+      <div class="container workflow">
+        <article class="workflow-step reveal">
+          <div class="step-top"><span>01</span><b>Bodega</b></div>
+          <h3>Registra la materia prima.</h3>
+          <p>Ingresa productos, cantidades y costos para mantener una base clara de lo que tienes disponible.</p>
+          <div class="step-example">
+            <small>Ejemplo</small>
+            <div><strong>Carne vacuno</strong><span>20 kg · $120.000</span></div>
+          </div>
+        </article>
+
+        <div class="workflow-line"><span>→</span></div>
+
+        <article class="workflow-step reveal reveal-delay-1">
+          <div class="step-top"><span>02</span><b>Cocina</b></div>
+          <h3>Transforma y porciona.</h3>
+          <p>Convierte la materia prima en porciones manteniendo la referencia de su costo de origen.</p>
+          <div class="step-example">
+            <small>Ejemplo</small>
+            <div><strong>Porción 250 g</strong><span>Costo calculado</span></div>
+          </div>
+        </article>
+
+        <div class="workflow-line"><span>→</span></div>
+
+        <article class="workflow-step reveal reveal-delay-2">
+          <div class="step-top"><span>03</span><b>Recetas</b></div>
+          <h3>Conoce el costo de preparar.</h3>
+          <p>Combina ingredientes y porciones para obtener una referencia concreta del costo de cada receta.</p>
+          <div class="step-example">
+            <small>Resultado</small>
+            <div><strong>Costo de receta</strong><span>Información para decidir</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section features" id="funciones">
+      <div class="container feature-grid">
+        <div class="feature-copy reveal">
+          <span class="eyebrow">Lo esencial, sin complicarte</span>
+          <h2>Controla el costo desde su origen.</h2>
+          <p class="feature-lead">CCC-Básico se concentra en el circuito principal de costos de cocina: materia prima, transformación y receta.</p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span>✓</span>
+              <div><strong>Materias primas organizadas</strong><p>Centraliza cantidades y costos de tus productos.</p></div>
+            </div>
+            <div class="feature-item">
+              <span>✓</span>
+              <div><strong>Porcionamiento con trazabilidad</strong><p>Mantén el vínculo entre la materia prima y la porción generada.</p></div>
+            </div>
+            <div class="feature-item">
+              <span>✓</span>
+              <div><strong>Recetas con costo</strong><p>Relaciona ingredientes para conocer cuánto cuesta producir.</p></div>
+            </div>
+            <div class="feature-item">
+              <span>✓</span>
+              <div><strong>Acceso por usuario y empresa</strong><p>Organiza el uso del sistema manteniendo separados los datos de cada negocio.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cost-demo reveal reveal-delay">
+          <div class="demo-top">
+            <div><span>Ejemplo de costeo</span><strong>Carne vacuno</strong></div>
+            <span class="status">Costo conectado</span>
+          </div>
+
+          <div class="cost-chain">
+            <div class="chain-row">
+              <span class="chain-label">Compra</span>
+              <div class="chain-info"><strong>20 kg</strong><small>$120.000 total</small></div>
+              <b>$6.000/kg</b>
+            </div>
+            <div class="chain-arrow">↓</div>
+            <div class="chain-row">
+              <span class="chain-label">Porción</span>
+              <div class="chain-info"><strong>250 g</strong><small>Desde la misma materia prima</small></div>
+              <b>$1.500</b>
+            </div>
+            <div class="chain-arrow">↓</div>
+            <div class="chain-row result">
+              <span class="chain-label">Receta</span>
+              <div class="chain-info"><strong>Lomo a lo pobre</strong><small>+ otros ingredientes</small></div>
+              <b>Costo final</b>
+            </div>
+          </div>
+
+          <p class="demo-note">Ejemplo ilustrativo para explicar el flujo de costos dentro de CCC-Básico.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section value-band">
+      <div class="container value-grid">
+        <div class="value-quote reveal">
+          <span class="eyebrow light">La idea central</span>
+          <blockquote>“No se trata solo de saber cuánto compraste. Se trata de saber cuánto te cuesta producir.”</blockquote>
+        </div>
+        <div class="value-points reveal reveal-delay">
+          <div><strong>01</strong><span>Ordena el origen del costo.</span></div>
+          <div><strong>02</strong><span>Conecta la transformación del producto.</span></div>
+          <div><strong>03</strong><span>Lleva ese costo hasta la receta.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="precio">
+      <div class="container pricing-grid">
+        <div class="pricing-copy reveal">
+          <span class="eyebrow">Plan CCC-Básico</span>
+          <h2>Una herramienta enfocada en controlar costos, no en llenarte de funciones que no usas.</h2>
+          <p>Empieza con las áreas esenciales del flujo de cocina y construye una visión más clara de lo que cuesta producir.</p>
+          <div class="pricing-note"><span>✓</span> Pensado para pequeños negocios gastronómicos.</div>
+        </div>
+
+        <article class="price-card reveal reveal-delay">
+          <div class="price-badge">CCC-Básico</div>
+          <div class="price-value"><strong>$19.990</strong><span>CLP / mes</span></div>
+          <p>Control esencial de costos de cocina.</p>
+
+          <ul>
+            <li><span>✓</span>Bodega y materias primas</li>
+            <li><span>✓</span>Cocina y porcionamiento</li>
+            <li><span>✓</span>Recetas y costos</li>
+            <li><span>✓</span>Usuarios y acceso por empresa</li>
+          </ul>
+
+          <a class="btn btn-primary btn-full" href="#contacto">Solicitar demostración <span>→</span></a>
+          <small>Conoce el sistema antes de comenzar.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-grid">
+        <div class="faq-copy reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Lo que un negocio necesita saber antes de probarlo.</h2>
+        </div>
+
+        <div class="faq-list reveal reveal-delay">
+          <details open>
+            <summary>¿Para qué tipo de negocio sirve CCC-Básico?</summary>
+            <p>Está orientado a pequeños negocios gastronómicos que trabajan con materias primas, porciones y recetas, como restaurantes, pizzerías, sushi, cafeterías, food trucks y pastelerías.</p>
+          </details>
+          <details>
+            <summary>¿Qué controla el sistema?</summary>
+            <p>El flujo principal de costos de cocina: materias primas en Bodega, transformación o porcionamiento en Cocina y utilización de esos productos en Recetas.</p>
+          </details>
+          <details>
+            <summary>¿Necesito saber de informática para usarlo?</summary>
+            <p>No. La propuesta de CCC-Básico es presentar el flujo de costos de una forma sencilla y orientada a la operación gastronómica.</p>
+          </details>
+          <details>
+            <summary>¿Puedo pedir una demostración antes de contratar?</summary>
+            <p>Sí. Puedes solicitar una demostración mediante el formulario de contacto y continuar la conversación por WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-card reveal">
+        <div class="contact-copy">
+          <span class="eyebrow light">Solicita una demostración</span>
+          <h2>Veamos cómo CCC-Básico puede ayudarte a ordenar tus costos.</h2>
+          <p>Completa estos datos y se abrirá WhatsApp con el mensaje preparado.</p>
+          <div class="contact-mini">
+            <span>✓ Sin formularios eternos</span>
+            <span>✓ Contacto directo</span>
+            <span>✓ Conversación sobre tu negocio</span>
+          </div>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <div class="field-grid">
+            <label>
+              <span>Tu nombre</span>
+              <input id="leadName" name="name" type="text" placeholder="Ej: René" required />
+            </label>
+            <label>
+              <span>Nombre del negocio</span>
+              <input id="leadBusiness" name="business" type="text" placeholder="Ej: Restaurante Central" required />
+            </label>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              <span>Tipo de negocio</span>
+              <select id="leadType" name="type" required>
+                <option value="">Selecciona una opción</option>
+                <option>Restaurante</option>
+                <option>Pizzería</option>
+                <option>Sushi</option>
+                <option>Cafetería</option>
+                <option>Food truck</option>
+                <option>Pastelería</option>
+                <option>Otro negocio gastronómico</option>
+              </select>
+            </label>
+            <label>
+              <span>Ciudad o comuna</span>
+              <input id="leadCity" name="city" type="text" placeholder="Ej: Santiago" />
+            </label>
+          </div>
+
+          <label>
+            <span>¿Qué quieres controlar mejor?</span>
+            <textarea id="leadNeed" name="need" rows="3" placeholder="Ej: porciones, costo de recetas, materias primas..."></textarea>
+          </label>
+
+          <button class="btn btn-whatsapp btn-full" type="submit">
+            <span class="wa-icon">◉</span>
+            Continuar por WhatsApp
+            <span>→</span>
+          </button>
+          <p class="form-hint" id="formHint">Configura tu número de WhatsApp en <strong>script.js</strong> antes de publicar.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-symbol">C</span>
+        <div><strong>CCC-Básico</strong><small>Control de Costos de Cocina</small></div>
+      </div>
+      <div class="footer-links">
+        <a href="#problema">El problema</a>
+        <a href="#flujo">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#precio">Precio</a>
+      </div>
+      <p>© <span id="currentYear"></span> CCC-Básico.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
