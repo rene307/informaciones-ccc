@@ -67,26 +67,25 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
 // Formulario -> WhatsApp.
 if (leadForm) {
   leadForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // Evita publicar la landing con el número de ejemplo.
-    if (WHATSAPP_NUMBER.includes("X")) {
-      if (formHint) {
-        formHint.textContent = "Debes reemplazar 569XXXXXXXX por tu número real en script.js antes de usar este botón.";
-        formHint.classList.add("is-error");
-      }
-      return;
-    }
+    const name =
+      document.getElementById("leadName")?.value.trim() || "";
 
-    const name = document.getElementById("leadName")?.value.trim() || "";
-    const business = document.getElementById("leadBusiness")?.value.trim() || "";
-    const type = document.getElementById("leadType")?.value || "";
-    const city = document.getElementById("leadCity")?.value.trim() || "";
-    const need = document.getElementById("leadNeed")?.value.trim() || "";
+    const business =
+      document.getElementById("leadBusiness")?.value.trim() || "";
+
+    const type =
+      document.getElementById("leadType")?.value || "";
+
+    const city =
+      document.getElementById("leadCity")?.value.trim() || "";
+
+    const need =
+      document.getElementById("leadNeed")?.value.trim() || "";
 
     const message = [
       "Hola, quiero solicitar una demostración de CCC-Básico.",
@@ -100,7 +99,9 @@ if (leadForm) {
       .filter(Boolean)
       .join("\n");
 
-    const whatsappUrl = `https://wa.me/56932322246?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    const whatsappUrl =
+      `https://wa.me/56932322246?text=${encodeURIComponent(message)}`;
+
+    window.location.href = whatsappUrl;
   });
 }
