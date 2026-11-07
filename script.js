@@ -2,10 +2,9 @@
 // CCC-BÁSICO - LANDING PAGE
 // =============================================================
 
-// IMPORTANTE:
-// Reemplaza este valor por tu número real de WhatsApp.
-// Formato Chile: 569XXXXXXXX (sin +, espacios ni guiones).
-const WHATSAPP_NUMBER = "569XXXXXXXX";
+// Número de contacto presente en la versión original del formulario.
+// Para cambiarlo en el futuro, edita solo esta constante (formato 569XXXXXXXX).
+const WHATSAPP_NUMBER = "56932322246";
 
 const header = document.querySelector(".header");
 const navToggle = document.getElementById("navToggle");
@@ -100,7 +99,7 @@ if (leadForm) {
       .join("\n");
 
     const whatsappUrl =
-      `https://wa.me/56932322246?text=${encodeURIComponent(message)}`;
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
     window.location.href = whatsappUrl;
   });
